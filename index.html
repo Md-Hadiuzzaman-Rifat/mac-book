@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!------------------------------ tailwind link  --------------------------->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!--------------------------------- custom css ---------------------------->
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class='container mx-auto mt-10'>
+        <div class="grid grid-flow-col grid-col-2 gap-16">
+            <!-- -----------------------left side image------------------------->
+            <div><img src="./images/mac.png" alt="" width="100%"></div>
+            <!--------------------- right side description --------------------->
+            <div>
+                <h1 class="text-3xl font-bold">Customize your Blue 24-inch iMac with Apple M1 chip</h1>
+                <p>Apple M1 chip with 8-core-CPU wiht 4 performance cores and efficiency core. 7-core GPU, and 16 core Neural Engine 8GB unified memory 256GB SSD storage to Thunderbolt / USB 4 ports Magic Mouse keyboard US English</p>
+                <!-------------------- memory section ------------------------ -->
+                <div class="memory mt-10">
+                    <h2 class="text-lg font-bold">Memory</h2>
+                    <ul>
+                        <li class="border-2 rounded-md px-6 py-2 m-2 memory_free"value=0>8GB undefined memory</li>
+                        <li class="border-2 rounded-md px-6 py-2 m-2 memory_16GB"value=180>16GB undefined memory</li>
+                    </ul>
+                </div>
+                <!-------------------------- storage section --------------------->
+                <div class="storage mt-10">
+                    <h2 class="text-lg font-bold">Storage</h2>
+                    <ul>
+                        <li class="border-2 rounded-md px-6 py-2 m-2 storage_free"value=0>256GB SSD Storage</li>
+                        <li class="border-2 rounded-md px-6 py-2 m-2 storage_512GB" value=100>512GB SSD Storage</li>
+                        <li class="border-2 rounded-md px-6 py-2 m-2 storage_1TB "value=180>1TB SSD Storage</li>
+                    </ul>
+                </div>
+                <!----------------------------delivery option  --------------------->
+                <div class="delivery mt-10">
+                    <h2 class="text-lg font-bold">Choose your delivery option</h2>
+                    <ul>
+                        <li class="border-2 rounded-md px-6 py-2 m-2 delivery_free">Friday, Aug 25 Free Prime Delivery</li>
+                        <li class="border-2 rounded-md px-6 py-2 m-2 delivery_20"value=20>Friday, Aug 21 Delivery charge $20</li>
+                    </ul>
+                </div>
+                <!------------------------- calculation section ----------------- -->
+                <div class="bill mt-20">
+                    <div class="grid grid-cols-2">
+                        <h2>Best Price</h2>
+                        <h2>$<span class="base_cost">1299</span></h2>
+                        <h2>Extra Memory Cost</h2>
+                        <h2>$<span class="memory_cost">00</span></h2>
+                        <h2>Extra Storage Cost</h2>
+                        <h2>$<span class="storage_cost">00</span></h2>
+                        <h2>Delivery charge</h2>
+                        <h2>$<span class="delivery_cost">00</span></h2>
+                        <hr><hr>
+                        <h2>Total Price</h2>
+                        <h2>$<span class="total_cost">00</span></h2>
+                    </div>
+                </div>
+                <hr class="mt-8">
+                <!----------------- promo code & final calculation ------------------->
+                <div class="mt-6">
+                    <h2>Add Promo Code</h2>
+                    <div>
+                        <input type="text" class="border-2 rounded-lg p-2 pr-12 promo_code">
+                        <button class="rounded-lg text-white p-2 px-6 font-medium">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="mb-8 mt-6">
+        <h1 class="text-5xl font-medium text-center mb-4">Total: $<span class="final_price">00</span></h1>
+        
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
